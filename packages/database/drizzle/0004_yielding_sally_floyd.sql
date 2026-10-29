@@ -1,0 +1,3 @@
+ALTER TABLE "queue_tickets" ADD COLUMN "assigned_doctor_id" uuid;--> statement-breakpoint
+ALTER TABLE "queue_tickets" ADD CONSTRAINT "queue_tickets_assigned_doctor_id_users_id_fk" FOREIGN KEY ("assigned_doctor_id") REFERENCES "public"."users"("id") ON DELETE restrict ON UPDATE no action;--> statement-breakpoint
+CREATE INDEX "queue_tickets_doctor_idx" ON "queue_tickets" USING btree ("assigned_doctor_id","status");

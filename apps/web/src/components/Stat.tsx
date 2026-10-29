@@ -1,0 +1,1 @@
+export function Stat({ label, value, icon, tone, foot }: { label: string; value: string; icon: string; tone: string; foot: string }) { return <div className="stat-card"><span className={`stat-icon ${tone}`}>{icon}</span><span className="stat-label">{label}</span><b>{value}</b><small>{foot}</small><span className="stat-trend">↗</span></div>; }

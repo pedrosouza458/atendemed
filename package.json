@@ -1,0 +1,23 @@
+{
+  "name": "atende",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm --filter @atende/api test",
+    "build": "pnpm --filter @atende/api build",
+    "db:generate": "pnpm --filter @atende/database generate",
+    "db:migrate": "pnpm --filter @atende/database migrate",
+    "db:seed": "pnpm --filter @atende/database seed",
+    "smoke:phase1": "node scripts/smoke-phase1.mjs",
+    "smoke:phase2": "node scripts/smoke-phase2.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
+    "eslint": "^10.13.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.0"
+  }
+}

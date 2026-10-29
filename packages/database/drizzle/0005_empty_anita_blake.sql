@@ -1,0 +1,1 @@
+ALTER TABLE "attendances" ADD COLUMN "draft" jsonb DEFAULT '{}'::jsonb NOT NULL;

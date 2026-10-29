@@ -1,0 +1,7 @@
+DATABASE_URL=postgresql://user:password@host.neon.tech/database?sslmode=require
+APP_ORIGIN=http://localhost:5173
+# Opcional: Expo Web do paciente em desenvolvimento local.
+# APP_WEB_ORIGIN=http://localhost:8082
+# Opcionais para recuperar acesso por e-mail via Resend:
+# RECOVERY_API_KEY=chave-do-provedor
+# RECOVERY_FROM=Atende <no-reply@dominio-verificado.example>

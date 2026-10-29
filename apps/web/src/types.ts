@@ -1,0 +1,12 @@
+export type User = { id: string; name: string; email: string; isSystemAdmin?: boolean };
+export type Membership = { facilityId: string; role: 'RECEPTIONIST' | 'DOCTOR' | 'ADMIN' };
+export type Patient = { id: string; fullName: string; birthDate: string; cpf?: string | null; phone?: string | null };
+export type Ticket = { id: string; patientId: string; fullName: string; code: string; department: string; status: string; priority: number; priorityReason?: string | null; assignedDoctorId?: string | null; assignedDoctorName?: string | null; attendanceId?: string | null; referralId?: string | null };
+export type Occupancy = { active: number; status: 'NORMAL' | 'HIGH' | 'FULL' | 'UNKNOWN'; updatedAt: string | null };
+export type Arrival = { id: string; issuedAt: string; patientName: string | null };
+export type CheckInResult = { arrival: { id: string; notified: boolean }; ticket: Ticket };
+export type Facility = { id: string; name: string; type: string; address: string; services?: string[]; occupancyCapacity?: number | null; occupancy?: Occupancy | null };
+export type Doctor = { id: string; name: string; specialties: string[] };
+export type AppNotification = { id:string;type:string;title:string;message:string;facilityId:string|null;resourceType:string|null;resourceId:string|null;readAt:string|null;createdAt:string };
+export type AttendanceDraft = { subjective: string; objective: string; vitals: Record<string, number | null>; painLocation: string; painScore: number | null; assessment: string; diagnosis: string; actions: string[]; plan: string; disposition: string | null; followUp: string; referralFacilityId: string | null; referralUrgency: string | null; referralReason: string; referralMessage: string };
+export const emptyDraft: AttendanceDraft = { subjective: '', objective: '', vitals: {}, painLocation: '', painScore: null, assessment: '', diagnosis: '', actions: [], plan: '', disposition: null, followUp: '', referralFacilityId: null, referralUrgency: null, referralReason: '', referralMessage: '' };

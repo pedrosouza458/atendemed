@@ -1,0 +1,83 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792790207087,
+      "tag": "0000_brief_flatman",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792794519672,
+      "tag": "0001_right_silver_sable",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792800109271,
+      "tag": "0002_puzzling_northstar",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792801847180,
+      "tag": "0003_common_paibok",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792807264568,
+      "tag": "0004_yielding_sally_floyd",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792809000025,
+      "tag": "0005_empty_anita_blake",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792810170420,
+      "tag": "0006_nifty_puck",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1792810503386,
+      "tag": "0007_colossal_fantastic_four",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792814325533,
+      "tag": "0008_known_whiplash",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1792816811272,
+      "tag": "0009_exotic_beyonder",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1792822111745,
+      "tag": "0010_elite_tag",
+      "breakpoints": true
+    }
+  ]
+}
